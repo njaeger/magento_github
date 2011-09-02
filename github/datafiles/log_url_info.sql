@@ -17,12 +17,12 @@ CREATE TABLE `log_url_info` (
   `url` varchar(255) NOT NULL DEFAULT '' COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table';
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `log_url_info` WRITE;
 /*!40000 ALTER TABLE `log_url_info` DISABLE KEYS */;
-INSERT INTO `log_url_info` VALUES (1,'http://localhost.local/magento_github/index.php/','http://localhost.local/magento_github/index.php/install/wizard/end/'),(2,'http://localhost.local/magento_github/',NULL),(3,'http://localhost.local/magento_github/',NULL),(4,'http://localhost.local/magento_github/',NULL),(5,'http://localhost.local/magento_github/',NULL),(6,'http://localhost.local/magento_github/',NULL),(7,'http://localhost.local/magento_github/','http://localhost.local/'),(8,'http://localhost.local/magento_github/','http://localhost.local/'),(9,'http://localhost.local/magento_github/','http://localhost.local/'),(10,'http://localhost.local/magento_github/','http://localhost.local/'),(11,'http://localhost.local/magento_github/','http://localhost.local/');
+INSERT INTO `log_url_info` VALUES (1,'http://localhost.local/magento_github/index.php/','http://localhost.local/magento_github/index.php/install/wizard/end/'),(2,'http://localhost.local/magento_github/',NULL),(3,'http://localhost.local/magento_github/',NULL),(4,'http://localhost.local/magento_github/',NULL),(5,'http://localhost.local/magento_github/',NULL),(6,'http://localhost.local/magento_github/',NULL),(7,'http://localhost.local/magento_github/','http://localhost.local/'),(8,'http://localhost.local/magento_github/','http://localhost.local/'),(9,'http://localhost.local/magento_github/','http://localhost.local/'),(10,'http://localhost.local/magento_github/','http://localhost.local/'),(11,'http://localhost.local/magento_github/','http://localhost.local/'),(12,'http://localhost.local/magento_github/',NULL);
 /*!40000 ALTER TABLE `log_url_info` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
