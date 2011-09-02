@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: magento_github
+-- ------------------------------------------------------
+-- Server version	5.1.41-3ubuntu12.10
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `log_url`
+--
+
+DROP TABLE IF EXISTS `log_url`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `log_url` (
+  `url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'URL ID',
+  `visitor_id` bigint(20) unsigned DEFAULT NULL COMMENT 'Visitor ID',
+  `visit_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Visit Time',
+  PRIMARY KEY (`url_id`),
+  KEY `IDX_LOG_URL_VISITOR_ID` (`visitor_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Log URL Table';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `log_url`
+--
+
+LOCK TABLES `log_url` WRITE;
+/*!40000 ALTER TABLE `log_url` DISABLE KEYS */;
+INSERT INTO `log_url` VALUES (1,1,'2011-09-01 08:20:16'),(2,1,'2011-09-01 08:47:22'),(3,1,'2011-09-01 08:49:16'),(4,1,'2011-09-01 08:53:36'),(5,1,'2011-09-01 08:53:56'),(6,2,'2011-09-01 10:23:40'),(7,2,'2011-09-01 10:55:55'),(8,2,'2011-09-01 10:55:58'),(9,2,'2011-09-01 10:56:27'),(10,2,'2011-09-01 10:57:32'),(11,3,'2011-09-02 06:46:29');
+/*!40000 ALTER TABLE `log_url` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2011-09-02 12:49:09
