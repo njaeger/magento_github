@@ -31,11 +31,12 @@ CREATE TABLE `customer_entity` (
   KEY `IDX_CUSTOMER_ENTITY_WEBSITE_ID` (`website_id`),
   CONSTRAINT `FK_CUSTOMER_ENTITY_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `FK_CUSTOMER_ENTITY_WEBSITE_ID_CORE_WEBSITE_WEBSITE_ID` FOREIGN KEY (`website_id`) REFERENCES `core_website` (`website_id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Customer Entity';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Customer Entity';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `customer_entity` WRITE;
 /*!40000 ALTER TABLE `customer_entity` DISABLE KEYS */;
+INSERT INTO `customer_entity` VALUES (1,1,0,1,'nils.jaeger@splendid-internet.de',1,NULL,1,'2011-09-07 16:43:46','2011-09-07 16:47:55',1);
 /*!40000 ALTER TABLE `customer_entity` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

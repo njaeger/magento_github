@@ -21,11 +21,12 @@ CREATE TABLE `log_customer` (
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`log_id`),
   KEY `IDX_LOG_CUSTOMER_VISITOR_ID` (`visitor_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Log Customers Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Log Customers Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `log_customer` WRITE;
 /*!40000 ALTER TABLE `log_customer` DISABLE KEYS */;
+INSERT INTO `log_customer` VALUES (1,6,1,'2011-09-07 16:44:50',NULL,1);
 /*!40000 ALTER TABLE `log_customer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

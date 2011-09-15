@@ -33,7 +33,7 @@ CREATE TABLE `admin_user` (
 
 LOCK TABLES `admin_user` WRITE;
 /*!40000 ALTER TABLE `admin_user` DISABLE KEYS */;
-INSERT INTO `admin_user` VALUES (1,'splendid','internet','nils.jaeger@splendid-internet.de','splendid','3edebf32c03f592d80a9e715bec31d4e:GS','2011-09-01 10:20:30','2011-09-01 08:20:07','2011-09-01 08:20:30',1,0,1,'N;');
+INSERT INTO `admin_user` VALUES (1,'splendid','internet','nils.jaeger@splendid-internet.de','splendid','3edebf32c03f592d80a9e715bec31d4e:GS','2011-09-15 12:21:30','2011-09-01 08:20:07','2011-09-15 10:21:30',3,0,1,'N;');
 /*!40000 ALTER TABLE `admin_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

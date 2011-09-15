@@ -24,11 +24,12 @@ CREATE TABLE `newsletter_subscriber` (
   KEY `IDX_NEWSLETTER_SUBSCRIBER_CUSTOMER_ID` (`customer_id`),
   KEY `IDX_NEWSLETTER_SUBSCRIBER_STORE_ID` (`store_id`),
   CONSTRAINT `FK_NEWSLETTER_SUBSCRIBER_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Newsletter Subscriber';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Newsletter Subscriber';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `newsletter_subscriber` WRITE;
 /*!40000 ALTER TABLE `newsletter_subscriber` DISABLE KEYS */;
+INSERT INTO `newsletter_subscriber` VALUES (1,1,NULL,1,'nils.jaeger@splendid-internet.de',1,'btkaepzvfrmu4lz4a9p5q196shsmxiwq');
 /*!40000 ALTER TABLE `newsletter_subscriber` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

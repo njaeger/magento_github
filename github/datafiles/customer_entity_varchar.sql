@@ -27,11 +27,12 @@ CREATE TABLE `customer_entity_varchar` (
   CONSTRAINT `FK_CSTR_ENTT_VCHR_ATTR_ID_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `eav_attribute` (`attribute_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CSTR_ENTT_VCHR_ENTT_TYPE_ID_EAV_ENTT_TYPE_ENTT_TYPE_ID` FOREIGN KEY (`entity_type_id`) REFERENCES `eav_entity_type` (`entity_type_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CUSTOMER_ENTITY_VARCHAR_ENTITY_ID_CUSTOMER_ENTITY_ENTITY_ID` FOREIGN KEY (`entity_id`) REFERENCES `customer_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Customer Entity Varchar';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='Customer Entity Varchar';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `customer_entity_varchar` WRITE;
 /*!40000 ALTER TABLE `customer_entity_varchar` DISABLE KEYS */;
+INSERT INTO `customer_entity_varchar` VALUES (1,1,5,1,'splendid'),(2,1,7,1,'internet'),(3,1,12,1,'3b6607bcee6b79bd8050a1354866f87d:WL'),(5,1,3,1,'Default Store View');
 /*!40000 ALTER TABLE `customer_entity_varchar` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

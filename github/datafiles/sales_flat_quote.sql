@@ -68,11 +68,12 @@ CREATE TABLE `sales_flat_quote` (
   KEY `IDX_SALES_FLAT_QUOTE_CUSTOMER_ID_STORE_ID_IS_ACTIVE` (`customer_id`,`store_id`,`is_active`),
   KEY `IDX_SALES_FLAT_QUOTE_STORE_ID` (`store_id`),
   CONSTRAINT `FK_SALES_FLAT_QUOTE_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Sales Flat Quote';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Sales Flat Quote';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `sales_flat_quote` WRITE;
 /*!40000 ALTER TABLE `sales_flat_quote` DISABLE KEYS */;
+INSERT INTO `sales_flat_quote` VALUES (1,1,'2011-09-07 16:43:48','2011-09-07 16:43:48',NULL,1,0,0,0,'0.0000',0,'1.0000','1.0000','EUR','EUR','EUR','0.0000','0.0000',NULL,1,3,1,'nils.jaeger@splendid-internet.de',NULL,'splendid',NULL,'internet',NULL,NULL,NULL,1,0,'127.0.0.1',NULL,NULL,NULL,NULL,'EUR','1.0000','1.0000',NULL,NULL,'0.0000','0.0000','0.0000','0.0000',1,0,NULL,NULL,0);
 /*!40000 ALTER TABLE `sales_flat_quote` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
