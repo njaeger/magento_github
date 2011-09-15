@@ -25,7 +25,7 @@ CREATE TABLE `log_visitor` (
 
 LOCK TABLES `log_visitor` WRITE;
 /*!40000 ALTER TABLE `log_visitor` DISABLE KEYS */;
-INSERT INTO `log_visitor` VALUES (1,'q1e1o5emk2bvchpml1vk0b6nb1','2011-09-01 08:20:15','2011-09-01 08:53:56',5,1),(2,'e2ape438acb1milo4s1tt9mdh3','2011-09-01 10:23:39','2011-09-01 10:57:32',10,1),(3,'h8f0vq891nn505i7d01qonqni3','2011-09-02 06:46:25','2011-09-02 06:46:29',11,1),(4,'8eo7i2svcvb93s117eickj9go5','2011-09-02 10:10:09','2011-09-02 10:10:09',12,1),(5,'5kdhjms0v89i51dp04ejntqee5','2011-09-05 08:45:52','2011-09-05 08:50:56',14,1),(6,'um9qd1cg0gi89tmgs889h7ejp0','2011-09-07 16:41:41','2011-09-07 16:57:26',23,1),(7,'j0tdralsnm6feeb6k0i6lkh7e4','2011-09-15 07:54:24','2011-09-15 08:11:53',27,1),(8,'8m82rtrstle03eter8airgslo4','2011-09-15 10:21:11','2011-09-15 10:21:12',28,1);
+INSERT INTO `log_visitor` VALUES (1,'q1e1o5emk2bvchpml1vk0b6nb1','2011-09-01 08:20:15','2011-09-01 08:53:56',5,1),(2,'e2ape438acb1milo4s1tt9mdh3','2011-09-01 10:23:39','2011-09-01 10:57:32',10,1),(3,'h8f0vq891nn505i7d01qonqni3','2011-09-02 06:46:25','2011-09-02 06:46:29',11,1),(4,'8eo7i2svcvb93s117eickj9go5','2011-09-02 10:10:09','2011-09-02 10:10:09',12,1),(5,'5kdhjms0v89i51dp04ejntqee5','2011-09-05 08:45:52','2011-09-05 08:50:56',14,1),(6,'um9qd1cg0gi89tmgs889h7ejp0','2011-09-07 16:41:41','2011-09-07 16:57:26',23,1),(7,'j0tdralsnm6feeb6k0i6lkh7e4','2011-09-15 07:54:24','2011-09-15 08:11:53',27,1),(8,'8m82rtrstle03eter8airgslo4','2011-09-15 10:21:11','2011-09-15 10:32:15',29,1);
 /*!40000 ALTER TABLE `log_visitor` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
